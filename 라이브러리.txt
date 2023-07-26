@@ -1,0 +1,7 @@
+npm i 
+yarn add 
+비교 검색 npm yarn 선택하시면 됩니다.
+
+axios 백엔드랑 비동기적으로 연결하기 위해 사용
+http-proxy-middleware spring 연결 cors 이슈 방지 사용
+

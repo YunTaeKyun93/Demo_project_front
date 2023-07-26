@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  position: static;
+  top: 10px;
+  .logo {
+    display: flex;
+    align-content: center;
+  }
+  .menu {
+    display: flex;
+    align-content: center;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    padding-right: 50px;
+    cursor: pointer;
+    :hover {
+      transition: 0.3s all ease-in-out;
+      color: rgb(117, 71, 175);
+    }
+  }
+}

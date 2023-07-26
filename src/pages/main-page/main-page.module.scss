@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 43, 43);
+
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .post-btn {
+    width: 92px;
+    height: 60px;
+    background-color: #a259ff;
+    border-radius: 20px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+  }
+}
