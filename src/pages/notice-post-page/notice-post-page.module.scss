@@ -1,101 +1,118 @@
 .wrapper {
-    color:white;
+    font-family: Arial, sans-serif; 
+    color: white;
     background-color: rgb(43, 43, 43);
-
-
-
 }
 
-form {
-    padding: 50px 50px;
+.board-title-wrapper {
+    width: 1280px;
+    height: 150px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.board-title {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+
+.form-wrapper {
+    padding: 100px 50px;
     gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(59,59,59);
-    
-}
+    background-color: rgb(59, 59, 59);
 
-
-
-
-input::placeholder {
-    font-size: 20px; 
-}
-
-
-.boardTitleWrapper{
-
-   height: 271px;
-   gap: 40px; 
-}
-
-.boardTitle {
-    font-size: 60px;
-}
-
-.boardTitleWrapper p {
-     font-size: 22px;
-}
-
-
-.articleTitle input{
-    background-color: white;
-    width:1050px;
-    height: 38px;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
-
-}
-
-.nameWrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.name input {
-    background-color: white;
-    width:500px;
-    height: 38px;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
-   
-
-}
-
-.password input{
-    background-color: white;
-    width:500px;
-    height: 38px;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
     
 
-}
 
-textarea {
-    width:1050px;
-    height: 900px;
-    background-color: white;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
+    .post-title {
+        background-color: white;
+        width: 1050px;
+        height: 38px;
+        border: none;
+        box-shadow: none;
+        border-radius: 20px;
+    }
+
+    .form-wrapper input::placeholder {
+        font-size: 20px; 
+    }
     
-}
+    
+    
+    .name-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    .name input,
+    .password input {
+        background-color: white;
+        width: 450px;
+        height: 38px;
+        border: none;
+        box-shadow: none;
+        border-radius: 20px;
+    }
+    
+    textarea {
+        width: 1050px;
+        height: 900px;
+        background-color: white;
+        border: none;
+        box-shadow: none;
+        border-radius: 20px;
+    }
+    
+    textarea::placeholder {
+        font-size: 20px;
+    }
+    
 
-button {
-    color:white;
-    background-color: rgb(162,89,255);
-    width:500px;
-    height: 38px;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
+
+    .file-wrapper {
+        width: 1280px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+
+
+    .upload-file-button {
+        background-color: rgb(162, 89, 255);;
+        padding: 6px 25px;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+        button {
+        color: white;
+        background-color: rgb(162, 89, 255);
+        width: 500px;
+        height: 38px;
+        border: none;
+        box-shadow: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
 
 }
