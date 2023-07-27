@@ -1,0 +1,154 @@
+.userList {
+    width: 400px;
+    height: 350px;
+    background-color: grey;
+    color: white;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10%;
+    display: absolute;
+    margin: 20px;
+    box-shadow: 2px -2px 5px 0px; //테스트
+    
+  }
+
+.top {
+    width: 400;
+    height: 250;
+    border: 2px solid white;
+    display: flex;
+    position: static;
+    float: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-box-01 {
+    width: 170px;
+    height: 180px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    display: relative;
+    margin: 15px;
+    float: left;
+}
+
+.user-box-01:hover {
+    width: 180px;
+    height: 190px;
+    
+}  
+
+.user-box-02 {
+    width: 170px;
+    height: 180px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    display: relative;
+    margin: 15px;
+    float: right;
+    
+}
+
+.user-box-02:hover {
+    width: 180px;
+    height: 190px;
+}
+
+.bottom {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: fixed;
+    
+}
+
+.bottom-left {
+    width: 300;
+    height: 150;
+    border: 1px solid white;
+    float: left;
+    position: static;
+    margin: 12px;
+    align-items: center;
+    justify-content: center;
+    display: fixed;
+}
+
+.user-box-03 {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    margin: 5px;
+    float: left;
+}
+
+.user-box-03:hover {
+    width: 75px;
+    height: 75px;
+}  
+
+.user-box-04 {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    margin: 5px;
+    float: right;
+}
+
+.user-box-04:hover {
+    width: 75px;
+    height: 75px;
+}  
+
+.bottom-right {
+    width: 300;
+    height: 150;
+    border: 1px solid white;
+    float: right;
+    position: static;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-box-05 {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    margin: 5px;
+    float: left;
+}
+
+.user-box-05:hover {
+    width: 75px;
+    height: 75px;
+}  
+
+.user-search-more {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 10%;
+    margin: 5px;
+    float: right;
+}
+
+.user-search-more:hover {
+    width: 75px;
+    height: 75px;
+}  
