@@ -6,16 +6,17 @@ const ss = classNames.bind(styles);
 
 const NoticePostPage = () => {
   const logic = useLogic();
-
+ return(
   <div className={ss("wrapper")}>
-    <div className={ss("boardTitleWrapper")}>
-      <h1 className={ss("boardTitle")}>Board</h1>
-      <p>Check out the latest news from the team 6+7=13 </p>
+    <div className={ss("board-title-wrapper")}>
+      <h1 className={ss("board-title")}>Board</h1>
+      <p>Check out the latest news from the team 6+7=13 | Daily Study Journal |
+        </p>
     </div>
 
-    <form>
-      <div>
-        <label for="title" className={ss("articleTitle")}>
+  <form className={ss("form-wrapper")}>
+      <div className={ss("post-title")}>
+        <label></label>
           <input
             type="text"
             name="title"
@@ -25,27 +26,30 @@ const NoticePostPage = () => {
               logic.setPostTitle(e.target.value);
             }}
           />
-        </label>
-      </div>
+       </div>
 
-      <div className={ss("nameWrapper")}>
+      <div className={ss("name-wrapper")}>
+        <div>
         <label className={ss("name")}>
+        
           <input
             type="text"
-            name="userPw"
-            id="userPw"
+            name="userName"
+            id="userName"
             placeholder="Name"
             onChange={(e) => {
               logic.setPostAuthor(e.target.value);
             }}
           />
-        </label>
+          </label>
+        </div>
 
+        <div>
         <label className={ss("password")}>
-          <input
+        <input
             type="password"
-            name="userName"
-            id="userName"
+            name="userPassword"
+            id="userPassword"
             placeholder="Password"
             onChange={(e) => {
               logic.setPostPassword(e.target.value);
@@ -53,34 +57,41 @@ const NoticePostPage = () => {
           />
         </label>
       </div>
+      </div>
 
       <div>
         <label>
           <textarea
-            name="userId"
-            id="userId"
+            placeholder="What's new?"
+            name="userPost"
+            id="userPost"
             onChange={(e) => {
               logic.setPostDescription(e.target.value);
             }}
           />
-        </label>
+          </label>
       </div>
-      <label>
-        click here to upload the file
-        <input
+
+      <div className={ss("file-wrapper")}>
+      <label className={ss("upload-file-button")} for="input-file">
+        Upload the file
+        </label>
+         <input
           type="file"
-          name="userName"
-          id="userName"
+          name="input-file"
+          id="input-file"
+          style={{display:"none"}}
           onChange={(e) => {
             logic.setPostPhoto(e.target.value);
           }}
         />
-      </label>
       <div>
         <button onClick={logic.onSubmit}>Submit</button>
       </div>
+    </div>
     </form>
-  </div>;
+  </div>
+ );
 };
 
 export default NoticePostPage;
