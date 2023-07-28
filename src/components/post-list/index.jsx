@@ -6,20 +6,21 @@ import PostHeader from '../../pages/main-page/fragments/post-header';
 import PostCard from '../post-card';
 
 
-const PostList = ({ logic, page }) => {
+const PostList = ({ items, page }) => {
     const ss = classNames.bind(styles);
-    const previewItems = logic.noticeItem.slice(-3);
+
+    console.log({ page })
     return (
 
         <div className={ss('wrapper')}>
-            <PostHeader logic={logic} />
+            <PostHeader />
             < div className={ss('posts-container')} >
-                {page === 'notice' && previewItems.map(item => (
+                {page === 'main' && items.map(item => (
                     <PostCard item={item} key={item.postTitle} />
                 ))}
 
 
-                {page === 'main' && previewItems.map(item => (
+                {page === 'notice' && items.map(item => (
                     <PostCard item={item} key={item.postTitle} />
                 ))}
 

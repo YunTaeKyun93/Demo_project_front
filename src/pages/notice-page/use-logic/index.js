@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 
 const useLogic = () => {
-  const [noticeItem, setNoticeItem] = useState([]);
+  const [noticeItems, setNoticeItem] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
     setNoticeItem(data);
 
   }, []);
   return {
-    noticeItem,
+    noticeItems,
     navigate
   };
 }

@@ -5,3 +5,5 @@ const ImageLoader = ({ name, width, height }) => {
 };
 
 export default ImageLoader;
+
+

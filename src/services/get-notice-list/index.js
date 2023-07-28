@@ -1,7 +1,7 @@
-// import data from '../../data';
-// const useGetNoticeList =()=>{
+import data from '../../data';
+const useGetNoticeList = () => {
 
-//     return async()=>{
-//         return data;
-//     }
-// }
+    return async () => {
+        return data;
+    }
+}

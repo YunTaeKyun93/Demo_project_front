@@ -1,5 +1,5 @@
 .wrapper {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     color: white;
     background-color: rgb(43, 43, 43);
 }
@@ -34,30 +34,35 @@
     align-items: center;
     background-color: rgb(59, 59, 59);
 
-    
-
-
     .post-title {
         background-color: white;
-        width: 1050px;
-        height: 38px;
+
         border: none;
         box-shadow: none;
         border-radius: 20px;
+
+        .title input {
+            background-color: white;
+            width: 1050px;
+            height: 38px;
+            border: none;
+            box-shadow: none;
+            border-radius: 20px;
+        }
     }
 
     .form-wrapper input::placeholder {
-        font-size: 20px; 
+        font-size: 20px;
     }
-    
-    
-    
+
+
+
     .name-wrapper {
         display: flex;
         justify-content: space-around;
     }
-    
-    
+
+
     .name input,
     .password input {
         background-color: white;
@@ -67,7 +72,7 @@
         box-shadow: none;
         border-radius: 20px;
     }
-    
+
     textarea {
         width: 1050px;
         height: 900px;
@@ -76,23 +81,24 @@
         box-shadow: none;
         border-radius: 20px;
     }
-    
+
     textarea::placeholder {
         font-size: 20px;
     }
-    
+
 
 
     .file-wrapper {
         width: 1280px;
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
     }
 
 
     .upload-file-button {
-        background-color: rgb(162, 89, 255);;
+        background-color: rgb(162, 89, 255);
+        ;
         padding: 6px 25px;
         border-radius: 4px;
         color: white;
@@ -100,9 +106,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      }
+    }
 
-        button {
+    button {
         color: white;
         background-color: rgb(162, 89, 255);
         width: 500px;

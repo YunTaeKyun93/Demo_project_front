@@ -3,21 +3,30 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 50px;
-  position: static;
+  position: fixed;
   top: 10px;
-  .logo {
-    display: flex;
-    align-content: center;
+  font-family: 'LINESeedKR-Bd';
+
+
+  .logo-container {
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px;
+    cursor: pointer;
+
   }
+
   .menu {
     display: flex;
-    align-content: center;
+    align-items: center;
     gap: 40px;
     font-weight: 600;
     font-size: 16px;
     color: white;
     padding-right: 50px;
     cursor: pointer;
+
     :hover {
       transition: 0.3s all ease-in-out;
       color: rgb(117, 71, 175);
