@@ -15,7 +15,7 @@ if(logic.isNoticeItems){
   return (
     <div className={ss('wrapper')}>
        <NavMenu/>
-      <PostList items={logic.noticeItems} page={'notice'} />
+      <PostList items={logic.noticeItems} page={'notice'} selctPost={()=>logic.selctPost()} />
     </div>
   )
 }

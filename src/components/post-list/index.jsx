@@ -6,7 +6,7 @@ import PostHeader from '../../pages/main-page/fragments/post-header';
 import PostCard from '../post-card';
 
 
-const PostList = ({ items, page }) => {
+const PostList = ({ items, page, selctPost }) => {
     const ss = classNames.bind(styles);
     return (
 
@@ -14,10 +14,10 @@ const PostList = ({ items, page }) => {
             <PostHeader page={page} />
             < div className={ss('posts-container')} >
                 {page === 'main' && items.map(item => (
-                    <PostCard item={item} key={item.postTitle} />
+                    <PostCard item={item} key={item.postTitle} selctPost={()=>selctPost()} />
                 ))}
                 {page === 'notice' && items.map(item => (
-                    <PostCard item={item} key={item.postTitle} />
+                    <PostCard item={item} key={item.postTitle} selctPost={()=>selctPost()} />
                 ))}
             </div >
         </div >

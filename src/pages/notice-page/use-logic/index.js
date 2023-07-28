@@ -6,15 +6,25 @@ import { useNavigate } from "react-router-dom";
 
 const useLogic = () => {
   const [noticeItems, setNoticeItem] = useState([]);
+  const [selectedPostId, setSelectedPostId] = useState('');
   const navigate = useNavigate();
   useEffect(() => {
     setNoticeItem(data);
 
   }, []);
+  const selctPost = ( id ) => {
+    setSelectedPostId(id);
+    console.log({selectedPostId});
+  };
+  useEffect(() => {
+    navigate(`notice/${selectedPostId}`)
+  }, [selectedPostId]);
   return {
-    isNoticeItems:!noticeItems,
+    isNoticeItems: !noticeItems,
     noticeItems,
-    navigate
+    navigate,
+    selectedPostId,
+    selctPost
   };
 }
 

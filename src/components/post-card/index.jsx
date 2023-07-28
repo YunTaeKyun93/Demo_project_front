@@ -1,12 +1,12 @@
 import React from 'react'
 import classNames from "classnames/bind";
 import styles from "./post-card.module.scss";
-import ImageLoader from '../image-loader';
 
-const PostCard = ({ item }) => {
+const PostCard = ({ item, selctPost }) => {
     const ss = classNames.bind(styles);
     return (
-        <div className={ss("wrapper")}>
+        <div className={ss("wrapper")}
+            onClick={() => selctPost(item.postId)}>
             <img src={item?.postPhoto} alt={item?.postPhoto} />
             <div className={ss('post-info', 'post-contents')}>
                 <h3>{item.postTitle}</h3>
