@@ -5,30 +5,29 @@ import usePostNotice from "./../../../services/post-notice/index";
 const useLogic = () => {
   const postNotice = usePostNotice();
   const navigate = useNavigate();
-  const [postTitle, setPostTitle] = useState("");
-  const [postDescription, setPostDescription] = useState("");
-  const [postAuthor, setPostAuthor] = useState("");
-  const [postPassword, setPostPassword] = useState("");
-  const [postPhoto, setPostPhoto] = useState("");
+  const [boardTitle, setBoardTitle] = useState("");
+  const [boardContents, setBoardContents] = useState("");
+  const [boardWriter, setBoardWriter] = useState("");
+  const [boardPass, setBoardPass] = useState("");
+  const [fileAttached, setFileAttached] = useState("");
 
   const onSubmit = async (e) => {
-    console.log({ postTitle, postAuthor, postPassword, postPhoto });
     e.preventDefault();
-    await postNotice({ postTitle, postAuthor, postPassword, postPhoto });
+    await postNotice({ boardTitle, boardWriter, boardContents, boardPass, fileAttached });
     navigate("/");
   };
   return {
-    postTitle,
-    postAuthor,
-    postPassword,
-    postPhoto,
-    postDescription,
+    boardTitle,
+    setBoardTitle,
+    boardContents,
+    setBoardContents,
+    boardWriter,
+    setBoardWriter,
+    boardPass,
+    setBoardPass,
+    fileAttached,
+    setFileAttached,
     onSubmit,
-    setPostDescription,
-    setPostTitle,
-    setPostAuthor,
-    setPostPassword,
-    setPostPhoto,
   };
 };
 

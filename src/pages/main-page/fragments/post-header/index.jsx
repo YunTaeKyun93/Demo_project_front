@@ -4,11 +4,13 @@ import styles from "./post-header.module.scss";
 import { BsFillEyeFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 
-const PostHeader = ({ logic }) => {
+const PostHeader = ({ page }) => {
   const ss = classNames.bind(styles);
   const navigate = useNavigate();
   return (
+
     <div className={ss('wrapper')}>
+     
       <div className={ss('container')}>
         <div className={ss('header')}>
           <div className={ss('header-contents')}>
@@ -16,7 +18,8 @@ const PostHeader = ({ logic }) => {
             <p>Let's communicate!!
             </p>
           </div>
-          <div className={ss('more-btn')} onClick={() => navigate('/notice')} > <BsFillEyeFill /><span>See More</span></div>
+          {page == 'main' && <div className={ss('more-btn')} onClick={() => navigate('/notice')} > <BsFillEyeFill /><span>See More</span></div>}
+
 
         </div>
       </div>

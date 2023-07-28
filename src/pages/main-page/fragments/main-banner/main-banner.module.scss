@@ -1,4 +1,31 @@
-.main-banner{
-    width: 100vw;
-    
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    .main-banner {
+        width: 100vw;
+    }
+
+    .post-btn {
+        width: 92px;
+        height: 60px;
+        background-color: #a259ff;
+        border-radius: 20px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: 900;
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        bottom: 100px;
+        &:hover{
+            opacity: 0.8;
+            transition: 0.4s all ease-in-out;
+        }
+    }
 }

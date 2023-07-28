@@ -2,12 +2,15 @@ import React from "react";
 import useLogic from "./use-logic";
 import classNames from "classnames/bind";
 import styles from "./notice-post-page.module.scss";
+import NavMenu from "../../components/nav-menu";
+
 const ss = classNames.bind(styles);
 
 const NoticePostPage = () => {
   const logic = useLogic();
   return (
     <div className={ss("wrapper")}>
+      <NavMenu />
       <div className={ss("board-title-wrapper")}>
         <h1 className={ss("board-title")}>Board</h1>
         <p>Check out the latest news from the team 6+7=13 | Daily Study Journal |
@@ -23,7 +26,7 @@ const NoticePostPage = () => {
               id="title"
               placeholder="Title"
               onChange={(e) => {
-                logic.setPostTitle(e.target.value);
+                logic.setBoardTitle(e.target.value);
               }}
             />
 
@@ -39,7 +42,7 @@ const NoticePostPage = () => {
                 id="userName"
                 placeholder="Name"
                 onChange={(e) => {
-                  logic.setPostAuthor(e.target.value);
+                  logic.setBoardWriter(e.target.value);
                 }}
               />
             </label>
@@ -53,7 +56,7 @@ const NoticePostPage = () => {
                 id="userPassword"
                 placeholder="Password"
                 onChange={(e) => {
-                  logic.setPostPassword(e.target.value);
+                  logic.setBoardPass(e.target.value);
                 }}
               />
             </label>
@@ -67,7 +70,7 @@ const NoticePostPage = () => {
               name="userPost"
               id="userPost"
               onChange={(e) => {
-                logic.setPostDescription(e.target.value);
+                logic.setBoardContents(e.target.value);
               }}
             />
           </label>
@@ -83,7 +86,7 @@ const NoticePostPage = () => {
             id="input-file"
             style={{ display: "none" }}
             onChange={(e) => {
-              logic.setPostPhoto(e.target.value);
+              logic.setFileAttached(e.target.value);
             }}
           />
           <div>

@@ -5,11 +5,13 @@ import classNames from "classnames/bind";
 import styles from "./main-page.module.scss";
 import PostList from "../../components/post-list";
 import MainBanner from "./fragments/main-banner";
+import { useParams } from "react-router-dom";
 
 const ss = classNames.bind(styles);
 
 const MainPage = () => {
   const logic = useLogic();
+
   return (
     <div className={ss("wrapper")}>
       <NavMenu logic={logic} />

@@ -7,21 +7,19 @@ import logo from '../../assets/logo/logo.png'
 
 const ss = classNames.bind(styles);
 
-const NavMenu = ({ logic }) => {
-  // const logoImage = logo;
-  const navigator = useNavigate();
+const NavMenu = () => {
+  const navigate = useNavigate();
   return (
     <div className={ss("wrapper")}>
-      <div className={ss("logo-container")}>
+      <div className={ss("logo-container")} onClick={() => navigate("/")}>
         <ImageLoader
           name={logo}
           width={80}
           height={80}
-          onClick={() => navigator("/")}
         />
       </div>
       <div className={ss("menu")}>
-       
+
       </div>
     </div>
   );

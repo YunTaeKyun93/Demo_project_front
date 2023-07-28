@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import data from "../../../data";
 import { useEffect } from "react";
@@ -8,14 +7,16 @@ const useLogic = () => {
   const [noticeItems, setNoticeItems] = useState([]);
   const navigate = useNavigate();
 
+
   useEffect(() => {
     setNoticeItems(data.slice(-3));
-    
+
   }, []);
 
   return {
     noticeItems,
-    navigate
+    navigate,
+
   };
 };
 
