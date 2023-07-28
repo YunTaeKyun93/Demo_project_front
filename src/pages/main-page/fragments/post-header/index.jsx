@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./post-header.module.scss";
 
 import { BsFillEyeFill } from "react-icons/bs";
-const PostHeader = () => {
+const PostHeader = ({logic}) => {
     const ss = classNames.bind(styles);
   return (
     <div className={ss('wrapper')}>
@@ -14,7 +14,7 @@ const PostHeader = () => {
                 <p>Let's communicate!!
                 </p>
             </div>
-            <div className={ss('more-btn')}> <BsFillEyeFill /><span>See More</span></div>
+            <div className={ss('more-btn')} onClick={()=>logic.navigate('/notice')} > <BsFillEyeFill /><span>See More</span></div>
 
         </div>
     </div>

@@ -1,8 +1,8 @@
-import React from "react";
 import { useState } from "react";
 import data from "../../../data";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 
 const useLogic = () => {
   const [noticeItem, setNoticeItem] = useState([]);
@@ -15,6 +15,6 @@ const useLogic = () => {
     noticeItem,
     navigate
   };
-};
+}
 
-export default useLogic;
+export default useLogic

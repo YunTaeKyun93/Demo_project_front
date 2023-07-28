@@ -3,7 +3,7 @@ import NavMenu from "../../components/nav-menu";
 import useLogic from "./use-logic";
 import classNames from "classnames/bind";
 import styles from "./main-page.module.scss";
-import PostList from "./fragments/post-list";
+import PostList from "../../components/post-list";
 
 const ss = classNames.bind(styles);
 
@@ -22,7 +22,7 @@ const MainPage = () => {
 
       </div>
 
-      <PostList logic={logic} />
+      <PostList logic={logic} page={'main'} />
     </div>
   );
 };

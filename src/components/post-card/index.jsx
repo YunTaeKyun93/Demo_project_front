@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from "classnames/bind";
 import styles from "./post-card.module.scss";
-import ImageLoader from '../../../../components/image-loader';
+import ImageLoader from '../image-loader';
 
 const PostCard = ({ item }) => {
     const ss = classNames.bind(styles);
