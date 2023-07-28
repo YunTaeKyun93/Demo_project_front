@@ -3,8 +3,7 @@ import NavMenu from "../../components/nav-menu";
 import useLogic from "./use-logic";
 import classNames from "classnames/bind";
 import styles from "./main-page.module.scss";
-import NoticeList from "./fragements/notice-list/index";
-import Scheduler from "./Scheduler";
+import PostList from "./fragments/post-list";
 
 const ss = classNames.bind(styles);
 
@@ -20,9 +19,10 @@ const MainPage = () => {
         <div>
           <div className={ss('post-btn')} onClick={() => logic.navigate('noticepost')}>게시글작성</div>
         </div>
-        <NoticeList logic={logic} />
+
       </div>
-    <Scheduler/>
+
+      <PostList logic={logic} />
     </div>
   );
 };

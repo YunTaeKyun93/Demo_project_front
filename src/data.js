@@ -1,8 +1,8 @@
-const  data = [
-  { title: 1, description: "설명1" },
-  { title: 2, description: "설명2" },
-  { title: 3, description: "설명3" },
-  { title: 4, description: "설명4" },
+const data = [
+  { postTitle: 1, postAuthor: "설명1", postDate: '20230726' },
+  { postTitle: 2, postAuthor: "설명2", postDate: '20230726' },
+  { postTitle: 3, postAuthor: "설명3", postDate: '20230726' },
+  { postTitle: 4, postAuthor: "설명4", postDate: '20230726' },
 ];
 
 

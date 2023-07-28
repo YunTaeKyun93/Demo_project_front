@@ -1,0 +1,67 @@
+.wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'LINESeedKR-Bd';
+
+    .container {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-left: 5vw;
+            padding-right: 5vw;
+
+            .header-contents {
+                color: #fff;
+
+                h2 {
+                    font-size: 38px;
+                    font-weight: 600;
+              
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 22px;
+                    font-weight: 400;
+
+                }
+            }
+        }
+
+        .more-btn {
+            width: 187px;
+            height: 60px;
+            border: 2px solid #A259FF;
+            border-radius: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            font-size: 22px;
+            cursor: pointer;
+
+            &:hover {
+                color: #A259FF;
+                transition: 0.2s all ease-in-out;
+            }
+
+            span {
+
+                font-size: 16px;
+
+
+            }
+        }
+    }
+
+}

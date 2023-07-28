@@ -1,0 +1,15 @@
+.wrapper {
+    width: 330px;
+    height: 470px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(59, 59, 59);
+    font-family: 'DOSPilgiMedium';
+    user-select: none;
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: 295px;
+        background-color: aliceblue;
+    }
+}
