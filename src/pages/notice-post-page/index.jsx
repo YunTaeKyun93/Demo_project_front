@@ -87,6 +87,7 @@ const NoticePostPage = () => {
             style={{ display: "none" }}
             onChange={(e) => {
               logic.setFileAttached(e.target.value);
+              alert('파일이 저장 되었습니다.')
             }}
           />
           <div>

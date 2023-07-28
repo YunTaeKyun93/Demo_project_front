@@ -12,6 +12,7 @@ const useLogic = () => {
 
   }, []);
   return {
+    isNoticeItems:!noticeItems,
     noticeItems,
     navigate
   };
