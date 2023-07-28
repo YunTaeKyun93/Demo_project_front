@@ -10,14 +10,18 @@ const PostList = ({ logic }) => {
     const ss = classNames.bind(styles);
     const previewItems = logic.noticeItem.slice(-3);
     return (
+
         <div className={ss('wrapper')}>
             <PostHeader />
-            <div className={ss('posts-container')}>
-                {previewItems.map(item => (
-                    <PostCard item={item} key={item.postTitle} />
-                ))}
-            </div>
-        </div>
+            < div className={ss('posts-container')} >
+                {
+                    previewItems.map(item => (
+                        <PostCard item={item} key={item.postTitle} />
+                    ))
+                }
+             
+            </div >
+        </div >
     )
 }
 

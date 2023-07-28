@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/noticepost" element={<NoticePostPage />} />
+        {/* <Route path="/noticelist" element={<NoticePostPage />} /> */}
 
       </Routes>
     </div>

@@ -7,6 +7,7 @@ const PostCard = ({ item }) => {
     const ss = classNames.bind(styles);
     return (
         <div className={ss("wrapper")}>
+
             <img src={item?.postPhoto} alt={item?.postPhoto} />
             <div className={ss('post-info', 'post-contents')}>
                 <h3>{item.postTitle}</h3>
@@ -18,8 +19,10 @@ const PostCard = ({ item }) => {
                     <span>{item.postDate}</span>
                 </div>
                 <div className={ss('post-footer-date')}>
-                    <p>Date</p>
-                    <span>{item.postDate}</span>
+                    <p>Post ID</p>
+                    <span>{item.postId}</span>
+
+
                 </div>
             </div>
         </div>

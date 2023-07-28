@@ -4,7 +4,6 @@ import useLogic from "./use-logic";
 import classNames from "classnames/bind";
 import styles from "./main-page.module.scss";
 import PostList from "./fragments/post-list";
-import Scheduler from "./Scheduler";
 
 const ss = classNames.bind(styles);
 
@@ -24,7 +23,6 @@ const MainPage = () => {
       </div>
 
       <PostList logic={logic} />
-      <Scheduler/>
     </div>
   );
 };

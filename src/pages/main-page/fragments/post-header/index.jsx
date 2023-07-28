@@ -10,7 +10,7 @@ const PostHeader = () => {
     <div className={ss('container')}>
         <div className={ss('header')}>
             <div className={ss('header-contents')}>
-                <h2>Team6+7 Daily Post</h2>
+                <h2>Team 6+7 Daily Post</h2>
                 <p>Let's communicate!!
                 </p>
             </div>
