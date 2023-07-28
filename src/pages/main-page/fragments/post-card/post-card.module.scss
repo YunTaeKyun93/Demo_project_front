@@ -7,9 +7,54 @@
     font-family: 'DOSPilgiMedium';
     user-select: none;
     cursor: pointer;
+
     img {
         width: 100%;
         height: 295px;
         background-color: aliceblue;
+    }
+
+    .post-contents {
+        padding: 5px;
+        color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .post-info {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    }
+
+    .post-footer {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color:#858584;
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 18px;
+            color: #fff;
+        }
     }
 }

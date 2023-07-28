@@ -8,11 +8,15 @@ const PostCard = ({ item }) => {
     return (
         <div className={ss("wrapper")}>
             <img src={item?.postPhoto} alt={item?.postPhoto} />
-            <div className={ss('post-info')}>
+            <div className={ss('post-info', 'post-contents')}>
                 <h3>{item.postTitle}</h3>
                 <p>{item.postAuthor}</p>
             </div>
-            <div className={ss('post-footer')}>
+            <div className={ss('post-footer', 'post-contents')}>
+                <div className={ss('post-footer-date')}>
+                    <p>Date</p>
+                    <span>{item.postDate}</span>
+                </div>
                 <div className={ss('post-footer-date')}>
                     <p>Date</p>
                     <span>{item.postDate}</span>

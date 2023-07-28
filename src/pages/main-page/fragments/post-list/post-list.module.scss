@@ -1,0 +1,12 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    gap: 60px;
+    .posts-container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}

@@ -1,11 +1,13 @@
 .wrapper {
     width: 100vw;
+ 
     display: flex;
     justify-content: center;
     font-family: 'LINESeedKR-Bd';
 
     .container {
         width: 80vw;
+        max-width: 1050px;
         display: flex;
         flex-direction: column;
         align-items: center;
